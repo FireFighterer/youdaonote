@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django中的form表单</title>
+</head>
+<body>
+   <form action="/userinfo/test_form" method="post">
+      {#  #}
+       {% csrf_token %}
+       {#  {{ myform.as_p }}  #}
+
+
+        {% comment %}
+       <ul>
+           {{ myform.as_ul }}
+       </ul>
+        {% endcomment %}
+
+        {% comment %}
+       <table>
+           {{ myform.as_table }}
+       </table>
+       {% endcomment %}
+
+       {% for f in myform %}
+         <br>{{ f.label }}{{ f }}
+       {%endfor%}
+
+       <input type="submit" value="注册">
+   </form>
+</body>
+</html>

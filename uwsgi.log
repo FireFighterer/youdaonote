@@ -1,0 +1,239 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Jun 28 16:36:30 2019] ***
+compiled with version: 7.4.0 on 28 June 2019 08:06:02
+os: Linux-4.18.0-24-generic #25~18.04.1-Ubuntu SMP Thu Jun 20 11:13:08 UTC 2019
+nodename: qiaozan-VirtualBox
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/qiaozan/youdaonote
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/qiaozan/youdaonote/youdaonote
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15526
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 176.140.6.21:8000 fd 4
+spawned uWSGI http 1 (pid: 5568)
+uwsgi socket 0 bound to TCP address 127.0.0.1:35873 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x559b2da66fb0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 83344 bytes (81 KB) for 2 cores
+*** Operational MODE: threaded ***
+failed to open python file youdaonote/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 5567, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 5567|app: -1|req: -1/1] 176.140.6.21 () {38 vars in 705 bytes} [Fri Jun 28 16:37:45 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Jun 28 16:38:17 2019] ***
+compiled with version: 7.4.0 on 28 June 2019 08:06:02
+os: Linux-4.18.0-24-generic #25~18.04.1-Ubuntu SMP Thu Jun 20 11:13:08 UTC 2019
+nodename: qiaozan-VirtualBox
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/qiaozan/youdaonote
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/qiaozan/youdaonote/
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15526
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (176.140.6.21:8000).
+bind(): Address already in use [core/socket.c line 769]
+--- no python application found, check your startup logs for errors ---
+[pid: 5567|app: -1|req: -1/2] 176.140.6.21 () {38 vars in 706 bytes} [Fri Jun 28 16:38:21 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Jun 28 16:40:33 2019] ***
+compiled with version: 7.4.0 on 28 June 2019 08:06:02
+os: Linux-4.18.0-24-generic #25~18.04.1-Ubuntu SMP Thu Jun 20 11:13:08 UTC 2019
+nodename: qiaozan-VirtualBox
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/qiaozan/youdaonote
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/qiaozan/youdaonote/
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15526
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (176.140.6.21:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Jun 28 16:46:42 2019] ***
+compiled with version: 7.4.0 on 28 June 2019 08:06:02
+os: Linux-4.18.0-24-generic #25~18.04.1-Ubuntu SMP Thu Jun 20 11:13:08 UTC 2019
+nodename: qiaozan-VirtualBox
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/qiaozan/youdaonote
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/qiaozan/youdaonote
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15526
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 176.140.6.21:8000 fd 4
+spawned uWSGI http 1 (pid: 5943)
+uwsgi socket 0 bound to TCP address 127.0.0.1:40077 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55d11c168f90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 83344 bytes (81 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55d11c168f90 pid: 5942 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 5942, cores: 2)
+[pid: 5942|app: 0|req: 1/1] 176.140.6.21 () {38 vars in 706 bytes} [Fri Jun 28 08:47:09 2019] GET / => generated 278 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 5942|app: 0|req: 2/2] 176.140.6.21 () {38 vars in 744 bytes} [Fri Jun 28 08:52:20 2019] GET /userinfo/login => generated 741 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 365 bytes (1 switches on core 1)
+[pid: 5942|app: 0|req: 3/3] 176.140.6.21 () {40 vars in 845 bytes} [Fri Jun 28 08:52:24 2019] GET /userinfo/login => generated 742 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+[pid: 5942|app: 0|req: 4/4] 176.140.6.21 () {48 vars in 1000 bytes} [Fri Jun 28 08:52:31 2019] POST /userinfo/login => generated 0 bytes in 87 msecs (HTTP/1.1 302) 9 headers in 554 bytes (1 switches on core 1)
+USER_FILE /home/qiaozan/youdaonote/userfiles
+[pid: 5942|app: 0|req: 5/5] 176.140.6.21 () {42 vars in 965 bytes} [Fri Jun 28 08:52:31 2019] GET /note/add_note => generated 585 bytes in 25 msecs (HTTP/1.1 200) 5 headers in 277 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Jun 28 17:12:42 2019] ***
+compiled with version: 7.4.0 on 28 June 2019 08:06:02
+os: Linux-4.18.0-24-generic #25~18.04.1-Ubuntu SMP Thu Jun 20 11:13:08 UTC 2019
+nodename: qiaozan-VirtualBox
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/qiaozan/youdaonote
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/qiaozan/youdaonote
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15526
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 176.140.6.21:8000 fd 4
+spawned uWSGI http 1 (pid: 6615)
+uwsgi socket 0 bound to TCP address 127.0.0.1:46687 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55dd1abd8f90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 83344 bytes (81 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55dd1abd8f90 pid: 6614 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 6614, cores: 2)
+[pid: 6614|app: 0|req: 1/1] 176.140.6.21 () {40 vars in 884 bytes} [Fri Jun 28 09:12:44 2019] GET / => generated 278 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Jun 28 17:36:54 2019] ***
+compiled with version: 7.4.0 on 28 June 2019 08:06:02
+os: Linux-4.18.0-24-generic #25~18.04.1-Ubuntu SMP Thu Jun 20 11:13:08 UTC 2019
+nodename: qiaozan-VirtualBox
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/qiaozan/youdaonote
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/qiaozan/youdaonote
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15526
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 176.140.6.21:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55c2a4606cd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 83344 bytes (81 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55c2a4606cd0 pid: 8265 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 8265, cores: 2)
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Jun 28 18:36:51 2019] ***
+compiled with version: 7.4.0 on 28 June 2019 08:06:02
+os: Linux-4.18.0-24-generic #25~18.04.1-Ubuntu SMP Thu Jun 20 11:13:08 UTC 2019
+nodename: qiaozan-VirtualBox
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/qiaozan/youdaonote
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/qiaozan/youdaonote
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 15526
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (176.140.6.21:8000).
+bind(): Address already in use [core/socket.c line 769]
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip

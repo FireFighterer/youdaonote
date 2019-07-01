@@ -1,0 +1,49 @@
+{% extends 'parent_page.html' %}
+
+{% block replace_title %}
+    个人日记列表
+{% endblock replace_title %}
+
+{% block replace_body %}
+<div style="height:300px;">
+    <table>
+         <tr>
+             <th>ID</th>
+             <th>标题</th>
+             <th>日记内容</th>
+             <th>>修改</th>
+             <th>删除</th>
+         </tr>
+         {% for note in page %}
+
+         <tr>
+             <td id="temp{{forloop.counter}}" > </td>
+             <td>{{ note.title }}</td>
+             <td>{{ note.content|truncatechars:8 }}</td>
+             <td><a href="/note/modify_note/{{ note.id }}">编辑笔记</a></td>
+             <td><a href="/note/delete_note/{{ note.id }}">删除笔记</a></td>
+             <td><a href="/note/look_note/{{ note.id }}">查看笔记</a></td>
+         </tr>
+                 <script>
+                     var temp=({{ page.number }}-1)*5+{{ forloop.counter}}
+                     document.getElementById('temp{{forloop.counter}}').innerHTML = temp;
+                 </script>
+         {% empty %}
+         <tr>
+             <td colspan="5">你没有任何笔记！</td>
+         </tr>
+
+         {% endfor %}
+
+     </table>
+  </div>
+
+    {% for p in paginator.page_range %}
+        {% if p == page.number %}
+            页面{{ p }}
+        {% else %}
+            <a href="{% url 'list_note' %}?page={{ p }}">页面{{ p }}</a>
+        {% endif %}
+    {% endfor %}
+{% endblock replace_body %}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+ <style>
+        label{
+        color:yellow;
+        }
+        span{
+        color:yellow;
+        }
+    </style>
+</head>
+<body style="background-image:url(/static/background_pic.jpg);
+background-size: cover;background-repeat: no-repeat;">
+<form action="/userinfo/reg" method="post">
+    {% csrf_token%}
+    <div>
+        <label>用户名</label>
+        <input type="text" name="username" >
+        <span>{{ username_error }}</span>
+    </div>
+    <div>
+        <label>密码</label>
+        <input type="password" name="password" >
+        <span>{{ password_error }}</span>
+    </div>
+     <div>
+        <label>确认密码</label>
+        <input type="password" name="password_again"  >
+         <span>{{ password_again_error }}</span>
+    </div>
+    <div>
+        <input type="submit" value="注册">&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/userinfo/login" style="color:yellow;font-size:25px">已注册请直接登录！</a>&nbsp;&nbsp;
+    </div>
+    {% if success == 0 %}
+        <h2 style="color:yellow;">用户名已存在！</h2>
+    {% endif %}
+</form>
+
+</body>
+</html>

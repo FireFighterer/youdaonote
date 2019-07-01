@@ -1,0 +1,36 @@
+{% extends 'parent_page.html' %}
+
+{% block replace_title %}
+    查找笔记
+{% endblock replace_title %}
+
+{% block replace_body %}
+      <a href="/book">返回上一级</a>
+    <form action="/book/search/" method="post">
+        {% csrf_token%}
+       <span>请输入书名</span><input type="text" name="name" value="{{ name }}"><br>
+        <input type="submit">
+    </form>
+
+    <table>
+         <tr>
+             <th>ID</th>
+             <th>书名</th>
+             <th>出版社</th>
+             <th>价格</th>
+             <th>市场价</th>
+
+         </tr>
+         {% for book in books %}
+         <tr>
+             <td>{{ book.id}}</td>
+             <td>{{ book.name}}</td>
+             <td>{{ book.pub}}</td>
+             <td>{{ book.price}}</td>
+             <td>{{ book.market_price}}</td>
+         </tr>
+         {% endfor %}
+     </table>
+{% endblock replace_body %}
+
+

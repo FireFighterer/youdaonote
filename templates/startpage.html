@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homepage</title>
+    <style>
+        a{
+        color:yellow;
+        font-size:40px;
+        }
+        h1{
+        color:yellow;
+        font-size:45px;
+        }
+
+    </style>
+
+</head>
+<body style="background-image:url(/static/background_pic.jpg);background-size: cover;background-repeat: no-repeat;">
+      <h1>欢迎{{username}}使用QQ云笔记(电脑浏览效果更佳哦)!
+      {% if loged == 0 %}
+       &nbsp; &nbsp;请先登录!
+      {% endif %}
+      </h1>
+      {% if loged == 1 %}
+      <br><br>
+      <a href="/note/add_note">开始写日记吧！</a>
+      <br>
+      <a href="/note/list_note">点击查看我的历史笔记</a><br><br>
+      <br><br>
+      <a href="/userinfo/logout">注销</a>
+
+      {% else %}
+       <a href="/userinfo/login">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="/userinfo/reg">注册</a>
+      {% endif %}
+
+</body>
+</html>

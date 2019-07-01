@@ -1,0 +1,19 @@
+{% extends 'parent_page.html' %}
+
+{% block replace_title %}
+    添加日记
+{% endblock replace_title %}
+
+{% block replace_body %}
+     <form action="/note/add_note" method="post" enctype="multipart/form-data" name="form1">
+        {% csrf_token%}
+       <a href="/note/list_note" style="color:yellow">点击查看历史笔记</a><br><br>
+       <input type="text" name="title" placeholder="标题"><br><br>
+       <span style="color:yellow;height:30px;">内容:</span><br>
+       <textarea name="content"></textarea><br>
+       <input type="file" name="file" id="picpath" style="display:none;width:0px" onChange="document.form1.path.value=this.value">
+       <input name="path" readonly>
+       <input type="button" value="上传附件" onclick="document.form1.file.click()">&nbsp;&nbsp;&nbsp;&nbsp;
+       <br><input type="submit" value="点击保存">
+    </form>
+{% endblock replace_body %}

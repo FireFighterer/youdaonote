@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style>
+        label,a{
+        color:yellow;
+        }
+    </style>
+
+</head>
+<body  style="background-image:url(/static/background_pic.jpg);background-size: cover;background-repeat: no-repeat;">
+<form action="/userinfo/login" method="post" >
+    {% csrf_token%}
+    <div>
+        <label>用户名</label>
+        <input type="text" name="username" value="{{ username }}">
+    </div>
+    <div>
+        <label>密码</label>
+        <input type="password" name="password" value="{{ password }}">
+    </div>
+    <div>
+        <label for="id_remember">记住密码</label>
+        <input type="checkbox" name="remember" id="id_remember" value="{{ remember }}">
+    </div>
+    <div>
+        <input type="submit" value="登录">
+    </div>
+    {% if status == 0 %}
+       <h2>登录失败！请重新登录!</h2>
+        <a href="/userinfo/reg">点我注册！</a>
+    {% endif %}
+</form>
+
+</body>
+</html>

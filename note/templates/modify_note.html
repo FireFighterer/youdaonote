@@ -1,0 +1,31 @@
+{% extends 'parent_page.html' %}
+
+{% block replace_title %}
+    编辑笔记
+{% endblock replace_title %}
+
+{% block replace_body %}
+     <form action="/note/modify_note/{{ id }}" name="form2" method="post" enctype="multipart/form-data">
+        {% csrf_token%}
+       <span>标题:&nbsp;&nbsp;</span><input type="text" name="title" value="{{title}}" ><br><br>
+       <span style="color:yellow;height:30px;">内容:</span><br>
+       <textarea name="content" >{{content}}</textarea>
+        <br>
+         {% if is_exit == 1 %}
+                <a href="/static/userfiles/{{username}}/{{accessory_id}}/{{ accessory_file }}">
+              点击查看附件:{{ accessory_file }}</a>
+              <a href="/note/delete_accessory/{{ note.id }}">删除附件</a>
+         {% else %}
+              <input type="file" name="upfile" id="picpath1" style="display:none;width:0px"
+                     onChange="document.form2.path.value=this.value">
+              <input name="path" readonly>
+              <input type="button" value="上传附件" onclick="document.form2.upfile.click()"><br>
+         {% endif %}
+
+       <br>
+        <input type="submit" value="确认修改">
+    </form>
+{% endblock replace_body %}
+
+
+

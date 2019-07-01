@@ -1,0 +1,18 @@
+{% extends 'parent_page.html' %}
+
+{% block replace_title %}
+    查看笔记
+{% endblock replace_title %}
+
+{% block replace_body %}
+       <a href="/note/modify_note/{{ note.id }}">点我进行编辑</a><br>
+       <h2>标题:&nbsp;&nbsp;{{ title }}</h2>
+       <textarea name="content" readonly >{{content}}</textarea>
+       <br>
+       {% if is_exit == 1 %}
+          <a href="/static/userfiles/{{username}}/{{accessory_id}}/{{ accessory_file }}">
+              点击查看附件:{{ accessory_file }}</a>
+       {% endif %}
+{% endblock replace_body %}
+
+

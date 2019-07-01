@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title >
+      {% block replace_title %}
+
+      {% endblock replace_title %}
+    </title>
+    <style>
+        body{
+         width:100%;
+         height:700px;
+        }
+
+        a{
+        color:yellow;
+        font-size:25px;
+        }
+        h1,h2{
+        color:yellow;
+        }
+        span{
+         color:yellow;
+         font-size:25px;
+        }
+        textarea{
+
+          background-color:transparent;
+          color:yellow;
+          font-size:25px;
+          width:900px;
+          height:380px;
+        }
+        table,table th,table td{
+        color:yellow;
+        font-size:25px;
+        }
+
+        input{
+         width:fit-content;
+
+         font-size:28px;
+        }
+    </style>
+</head>
+<body style="background-image:url(/static/background_pic.jpg);background-size: cover;background-repeat: no-repeat;">
+    <div>
+        <a href="/">返回主页</a>
+        &nbsp;&nbsp; <span>用户名：{{ username }}</span>
+        &nbsp;&nbsp; <a href="/note/add_note">写日记</a>
+        &nbsp;&nbsp;<a href="/note/list_note">点击查看我的历史笔记</a>
+        &nbsp;&nbsp; <a href="/userinfo/logout">注销</a><br><br>
+    </div>
+
+    <!--中间替代部分-->
+    <div style="height:580px;">
+      {% block replace_body %}
+
+      {% endblock replace_body %}
+    </div>
+
+
+
+    <div>
+       <h2 style="color:blue;">QZ云笔记，让你随时随地记录你生活的点点滴滴！</h2>
+    </div>
+
+</body>
+</html>
