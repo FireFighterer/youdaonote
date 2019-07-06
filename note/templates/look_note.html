@@ -6,7 +6,8 @@
 
 {% block replace_body %}
        <a href="/note/modify_note/{{ note.id }}">点我进行编辑</a><br>
-       <h2>标题:&nbsp;&nbsp;{{ title }}</h2>
+       <h2>标题:&nbsp;&nbsp;{{ title }}</h2><span>创建时间:{{ createtime }}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>最近修改时间:{{ modifytime }}</span><br>
        <textarea name="content" readonly >{{content}}</textarea>
        <br>
        {% if is_exit == 1 %}

@@ -60,6 +60,8 @@ def look_note(request,id):
         note=models.Note.objects.get(id=id)
         title =note.title
         content = note.content
+        createtime=note.createtime
+        modifytime=note.modifytime
         accessory_file=note.accessory_file
         is_exit=0 if not accessory_file else 1
         accessory_id=note.accessory_id
@@ -94,6 +96,8 @@ def modify_note(request,id):
         note=models.Note.objects.get(id=id)
         title =note.title
         content = note.content
+        createtime = note.createtime
+        modifytime = note.modifytime
         accessory_file = note.accessory_file
         accessory_id = note.accessory_id
         is_exit = 0 if not accessory_file else 1

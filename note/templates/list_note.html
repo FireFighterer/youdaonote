@@ -40,9 +40,9 @@
 
     {% for p in paginator.page_range %}
         {% if p == page.number %}
-            页面{{ p }}
+            <span style="font-size:15px;color:black;">第{{ p }}页</span>
         {% else %}
-            <a href="{% url 'list_note' %}?page={{ p }}">页面{{ p }}</a>
+            <a href="{% url 'list_note' %}?page={{ p }}"  style="font-size:15px;">第{{ p }}页</a>
         {% endif %}
     {% endfor %}
 {% endblock replace_body %}
